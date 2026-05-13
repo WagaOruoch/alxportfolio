@@ -1,0 +1,12 @@
+# Render service manifest for the portfolio site
+services:
+  - type: static_site
+    name: daniel-oruoch-portfolio
+    env: static
+    branch: main
+    buildCommand: ""
+    publishPath: "/"
+    plan: free
+
+# Note: Render will use this manifest when you push the repo and connect it.
+# Replace `name` or `branch` as needed for your setup.

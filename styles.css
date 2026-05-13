@@ -1,0 +1,48 @@
+:root{
+  --bg: #ffffff;
+  --text: #0b0b0b;
+  --muted: #6b6b6b;
+  --card: #f7f7f7;
+  --border: #e6e6e6;
+}
+
+*{box-sizing:border-box}
+body{font-family:Inter,Segoe UI,system-ui,Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);margin:0;line-height:1.6}
+.container{max-width:900px;margin:0 auto;padding:2.5rem 1.25rem}
+.site-header{padding:3.5rem 0 1.25rem}
+.avatar{width:220px;height:220px;border-radius:8px;object-fit:cover;border:1px solid var(--border);display:block;margin:0 auto}
+.name{font-size:2.25rem;margin:.25rem 0;font-weight:700;letter-spacing:0.2px}
+.tagline{color:var(--muted);margin:0;font-weight:600}
+main{padding-bottom:4rem}
+section{background:var(--card);padding:1.5rem;border-radius:10px;margin:1.25rem 0;border:1px solid var(--border)}
+section h2{margin-top:0;color:var(--text)}
+
+/* Hero layout */
+.hero{display:flex;flex-direction:column;align-items:center;gap:1.5rem}
+.hero-left{text-align:center}
+.hero-right{width:260px}
+.lead{color:var(--text);margin-top:1rem;max-width:56ch}
+.hero-cta{margin-top:1.25rem}
+.btn{display:inline-block;background:#0b0b0b;color:#ffffff;padding:.6rem 1rem;border-radius:6px;text-decoration:none;font-weight:600}
+
+/* Projects grid */
+.grid{display:grid;grid-template-columns:repeat(1,1fr);gap:1rem;margin-top:1rem}
+.card{background:transparent;border-radius:8px;overflow:hidden;border:1px solid var(--border);padding:0}
+.card img{width:100%;height:180px;object-fit:cover;display:block}
+.card h3{margin:0;padding:.75rem .75rem;color:var(--text);font-size:1rem}
+
+.site-footer{padding:1rem 0;text-align:center;color:var(--muted);border-top:1px solid var(--border)}
+
+a{color:inherit;text-decoration:underline dotted;}
+a:hover{color:var(--text);text-decoration:underline}
+
+@media(min-width:700px){
+  .container{padding:3rem}
+  .hero{flex-direction:row;align-items:center;justify-content:space-between}
+  .hero-left{text-align:left;max-width:48%}
+  .hero-right{width:42%}
+  .avatar{width:320px;height:320px;border-radius:6px}
+  .name{font-size:2.75rem}
+  .grid{grid-template-columns:repeat(3,1fr)}
+  .card img{height:200px}
+}

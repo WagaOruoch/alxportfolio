@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio — Daniel Oruoch</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container hero">
+        <div class="hero-left">
+          <h1 class="name">Daniel Oruoch</h1>
+          <p class="tagline">Aspiring Software Engineer</p>
+          <p class="lead">I build clean, maintainable web applications with a focus on clarity and performance.</p>
+          <p class="hero-cta"><a class="btn" href="#contact">Get in touch</a></p>
+        </div>
+        <div class="hero-right">
+          <img class="avatar" src="avatar.jpg" alt="Daniel Oruoch" />
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section id="about">
+        <h2>About Me</h2>
+        <p>Motivated developer learning full-stack web development. I enjoy building projects that solve real problems.</p>
+      </section>
+
+      <section id="projects">
+        <h2>Selected Work</h2>
+        <div class="grid">
+          <article class="card"> <img src="https://via.placeholder.com/400x300?text=Project+1" alt="Project 1"> <h3>Project One</h3> </article>
+          <article class="card"> <img src="https://via.placeholder.com/400x300?text=Project+2" alt="Project 2"> <h3>Project Two</h3> </article>
+          <article class="card"> <img src="https://via.placeholder.com/400x300?text=Project+3" alt="Project 3"> <h3>Project Three</h3> </article>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:oruochdaniel07@gmail.com">oruochdaniel07@gmail.com</a></p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">© <span id="year"></span> Daniel Oruoch</div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
