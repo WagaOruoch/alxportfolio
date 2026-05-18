@@ -7,12 +7,19 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+    <div class="brand-bar">
+      <div class="container brand-wrap">
+        <span class="brand-mark" aria-label="Daniel Oruoch brand mark">DO</span>
+        <span class="brand-name">Daniel Oruoch</span>
+      </div>
+    </div>
+
     <header class="site-header">
       <div class="container hero">
         <div class="hero-left">
           <h1 class="name">Daniel Oruoch</h1>
-          <p class="tagline">Aspiring Software Engineer</p>
-          <p class="lead">I build clean, maintainable web applications with a focus on clarity and performance.</p>
+          <p class="tagline">Aspiring Machine Learning Engineer</p>
+          <p class="lead">I build clean, maintainable software with a focus on usability, performance, and dependable results.</p>
           <p class="hero-cta"><a class="btn" href="#contact">Get in touch</a></p>
         </div>
         <div class="hero-right">
@@ -24,26 +31,53 @@
     <main class="container">
       <section id="about">
         <h2>About Me</h2>
-        <p>Motivated developer learning full-stack web development. I enjoy building projects that solve real problems.</p>
+        <p>Daniel Oruoch is an aspiring Machine Learning Engineer with a background in computer science and a passion for turning data into meaningful discoveries. He believes information is power, and channels that belief into building practical, data-driven solutions. From developing a water survey platform to implementing ETL pipelines, Daniel bridges the gap between complex algorithms and real-world impact. His long-term goal is to lead engineering teams building ethical, high-impact AI technologies.</p>
+      </section>
+
+      <section id="pitch">
+        <h2>Elevator Pitch</h2>
+        <div class="video-wrap">
+          <video controls preload="metadata" class="pitch-video">
+            <source src="elevator-pitch.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <p class="video-note">Replace <strong>elevator-pitch.mp4</strong> with your own video file name, or swap this player for an embedded link.</p>
       </section>
 
       <section id="projects">
         <h2>Selected Work</h2>
         <div class="grid">
-          <article class="card"> <img src="https://via.placeholder.com/400x300?text=Project+1" alt="Project 1"> <h3>Project One</h3> </article>
-          <article class="card"> <img src="https://via.placeholder.com/400x300?text=Project+2" alt="Project 2"> <h3>Project Two</h3> </article>
-          <article class="card"> <img src="https://via.placeholder.com/400x300?text=Project+3" alt="Project 3"> <h3>Project Three</h3> </article>
+          <article class="card">
+            <img src="https://via.placeholder.com/400x300?text=Project+1" alt="Project 1" />
+            <h3>Water Survey Platform</h3>
+            <p>Built a comprehensive water survey platform for a reputable water company to support water analytics and help the organization make data-driven decisions about water management.</p>
+          </article>
+          <article class="card">
+            <img src="https://via.placeholder.com/400x300?text=Project+2" alt="Project 2" />
+            <h3>ETL Pipeline</h3>
+            <p>Designed and implemented an Extract, Transform, Load pipeline for a water company, enabling them to process raw data efficiently and extract sharper, more actionable insights.</p>
+          </article>
+          <article class="card">
+            <img src="https://via.placeholder.com/400x300?text=Project+3" alt="Project 3" />
+            <h3>AI-Driven Application (AU Innovations)</h3>
+            <p>Contributing to the development of cutting-edge AI-driven applications at AU Innovations, focusing on machine learning integration and scalable software architecture.</p>
+          </article>
         </div>
       </section>
 
       <section id="contact">
         <h2>Contact</h2>
+        <p>I am available for internship and junior software engineering opportunities.</p>
         <p>Email: <a href="mailto:oruochdaniel07@gmail.com">oruochdaniel07@gmail.com</a></p>
       </section>
     </main>
 
     <footer class="site-footer">
-      <div class="container">© <span id="year"></span> Daniel Oruoch</div>
+      <div class="container footer-wrap">
+        <span class="brand-mark" aria-hidden="true">DO</span>
+        <span>© <span id="year"></span> Daniel Oruoch</span>
+      </div>
     </footer>
 
     <script>
